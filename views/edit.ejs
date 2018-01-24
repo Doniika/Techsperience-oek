@@ -1,0 +1,70 @@
+<% include partials/header %>
+
+<h1>Edit User's Data  </h1>
+<div>
+
+<h3><br>
+
+<br> Edit and Update the information below: </h3><br>
+
+
+<div>
+
+<center>
+
+
+<form Method = "POST" action="/oek/update/<%doc._id%>">
+		<div>
+			
+			<label for= "first name"> 
+			<input type="text" value="<%= doc.firstname %>" placeholder= "First name"  name="first_name"id="first_name">
+			<label for= "last name">  
+			<input type="text" placeholder= "Last name" value="<%= doc.lastname %>" name="last_name"id="last_name">
+		</div>
+		
+		<div>
+			<label for="gender">Gender</label>
+			<select id="gender" name="gender">
+			<option  disabled selected></option>
+			<option value="Female">Female</option>
+			<option value="Male">Male</option>
+			<option value="Other">Other</option>
+		</div>
+	
+  <div>
+    <label for="bday">Birthday</label>
+    <input type="date" value="<%= doc.birthday %>"  name="bday" id="bday" >
+  </div>
+
+			
+			
+			
+		<div> 
+			<label for=" Email"> 
+			<input type="text" placeholder= "Email" value="<%= doc.email %>"  name="Email" id="Email">
+			<label for="Password"> 
+			<input type="text" placeholder= "Password" value="<%= doc.password %>"  name="Password" id="Password">
+			</div>
+			<div>
+			<label for="Interested Fields"> 
+			<input type="text" placeholder= "Interested Fields" value="<%= doc.interestedfields %>" name="Interested_Fields" id="Interested_Fields">
+			<label for="Education"> 
+			<input type="text" placeholder= "Education" value="<%= doc.education%>" name="Education" id="Education">
+		</div>
+		<div>
+			<button type="submit">Update</button>
+			<button type="reset">Reset</button>
+			</div>
+	</center>
+</form>
+
+
+
+
+
+
+
+
+<% include partials/footer %>
+
+
