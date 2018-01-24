@@ -8,6 +8,6 @@ In terminal write the following commands:
 
 * cd Desktop
 * git clone https://github.com/Doniika/Techsperience-oek.git
-* cd store-api
+* cd techsperience-oek
 * npm install
 * npm start (or nodemon)
