@@ -6,8 +6,8 @@ Prototype for oek
 In terminal write the following commands:
 
 
-*cd Desktop
-*git clone https://github.com/Doniika/Techsperience-oek.git
-*cd store-api
-*npm install
-*npm start (or nodemon)
+* cd Desktop
+* git clone https://github.com/Doniika/Techsperience-oek.git
+* cd store-api
+* npm install
+* npm start (or nodemon)
