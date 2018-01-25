@@ -1,0 +1,75 @@
+<% include partials/header %>
+<center>
+<h1> Register User (Student) Form</h1>
+
+<h3><br>
+
+<br> Please fill in your information below </h3><br>
+
+</center>
+
+
+<center>
+
+<form Method = "POST" action="/oek/add">
+       <div>
+           
+           <label for= "first name">
+           <input type="text" placeholder= "First name" name="firstname" id="first_name">
+           <label for= "last name">  
+           <input type="text" placeholder= "Last name" name="lastname" id="last_name">
+       </div>
+       
+       <div>
+           <label for="gender">Gender</label>
+           <select id="gender" name="gender">
+           <option  disabled selected></option>
+           <option value="Female">Female</option>
+           <option value="Male">Male</option>
+           <option value="Other">Other</option>
+           
+           <label for="birthday">
+           <p>Birthday:
+           <input type="date" name="date">
+           </p>
+       
+       </div>
+   
+     
+
+           
+           
+           
+       <div>
+           <label for=" Email">
+           <input type="text" placeholder= "Email" name="email" id="Email">
+           <label for="Password">
+           <input type="password" placeholder="Enter Password" name="psw" required>
+           </div>
+           <div>
+           <label for="Education">
+           <input type="text" placeholder= "Education" name="education" id="Education">
+           <label for="Interested Fields">
+           <input type="text" placeholder= "Interested Fields" name="ifields" id="Interested Fields">
+           
+       </div>
+       
+       <div>
+           
+           <button type="submit">Submit</button> <button type="reset">Reset</button>
+           
+       </div>
+           
+   </center>
+</form>
+
+<a href="/table">Show registered users</a>
+
+
+
+
+
+
+
+
+<% include partials/footer %>
